@@ -1,127 +1,145 @@
-/* WOLVDEN PROFILE CSS — TUNDRA THEME */
-/* Paste into: Den → Settings → Profile CSS */
+/* WOLVDEN PROFILE CSS — SUNSET TUNDRA THEME */
+/* Paste EVERYTHING below into: Den → Settings → Profile CSS */
 
-/* ===== BACKGROUND ===== */
+/* ==================== GLOBAL ==================== */
+
 body {
-    background: url('https://wallpaperbat.com/img/355846-snowy-forest-winter-wallpaper.jpg') no-repeat center center fixed !important;
+    background: url('https://p4.wallpaperbetter.com/wallpaper/368/992/890/earth-sunset-alaska-cloud-wallpaper-preview.jpg') no-repeat center center fixed !important;
     background-size: cover !important;
-    color: #eef2f3 !important;
+    color: #000000 !important;
 }
 
-/* ===== HEADER / TITLE ===== */
-#main h1, #main h2.page-title {
-    background: rgba(220, 235, 240, 0.25) !important;
-    padding: 12px 20px !important;
-    border-bottom: 2px solid #b6c7ce !important;
-    box-shadow: 0 0 18px #cfe3ea !important;
-    text-shadow: 0 0 8px #ffffff !important;
-    border-radius: 12px;
-    color: #f7fbfc !important;
+body, h1, h2, h3, h4, h5, p, span, div, a, td, th, li {
+    color: #000000 !important;
 }
 
-/* ===== SIDEBAR (TRANSPARENT ICE) ===== */
-#sidebar, #sidebar .card {
-    background: rgba(200, 220, 230, 0.18) !important;
-    border: 1px solid rgba(180, 205, 215, 0.6) !important;
-    border-radius: 14px !important;
-    box-shadow: 0 0 18px rgba(210, 235, 245, 0.6) !important;
+* {
+    transition: box-shadow 0.25s ease, filter 0.25s ease, background-color 0.25s ease;
 }
 
-#sidebar h3, #sidebar h4 {
-    color: #e9f4f7 !important;
+/* ==================== TOP BAR ==================== */
+
+#header .navbar-main,
+.navbar-status {
+    background: rgba(245, 225, 210, 0.55) !important;
+    border-bottom: 1px solid rgba(200, 180, 165, 0.8) !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(4px);
 }
 
+#header a,
+.navbar-status a {
+    color: #000000 !important;
+}
+
+/* ==================== SIDEBAR ==================== */
+
+#sidebar,
+#sidebar .card {
+    background: rgba(245, 235, 225, 0.45) !important;
+    border: 1px solid rgba(200, 185, 170, 0.7) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.5) !important;
+}
+
+#sidebar h3,
+#sidebar h4,
 #sidebar a {
-    color: #d8edf3 !important;
+    color: #000000 !important;
 }
 
-/* ===== MAIN PANELS ===== */
-#main, .box, .container, .content, .table {
-    background: rgba(190, 210, 220, 0.28) !important;
-    border: 1px solid rgba(170, 195, 205, 0.7) !important;
+/* ==================== MAIN PANELS ==================== */
+
+#main,
+.box,
+.container,
+.content,
+.card,
+.table {
+    background: rgba(250, 240, 230, 0.55) !important;
+    border: 1px solid rgba(210, 195, 180, 0.8) !important;
     border-radius: 18px !important;
-    box-shadow: 0 0 16px rgba(210, 235, 245, 0.5) !important;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.45) !important;
 }
 
-/* ===== NAV TABS ===== */
+/* ==================== HEADERS ==================== */
+
+#main h1,
+#main h2.page-title {
+    background: rgba(255, 235, 220, 0.65) !important;
+    padding: 12px 20px !important;
+    border-radius: 14px !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.6) !important;
+    text-align: center;
+}
+
+/* ==================== NAV TABS ==================== */
+
 .nav-tabs {
     border: none !important;
 }
 
 .nav-tabs .nav-link {
-    color: #e3f4f9 !important;
-    background: rgba(190, 215, 225, 0.2) !important;
-    border: 1px solid rgba(170, 195, 205, 0.6) !important;
-    border-radius: 0 0 35px 35px !important;
+    background: rgba(240, 225, 210, 0.55) !important;
+    border: 1px solid rgba(200, 185, 170, 0.7) !important;
+    border-radius: 0 0 36px 36px !important;
 }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link:hover {
-    background: rgba(210, 235, 245, 0.4) !important;
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+    background: rgba(255, 240, 225, 0.75) !important;
 }
 
-/* ===== WOLF IMAGES (FROST RING) ===== */
-.wolf-avatar, .lead-wolf img, .featured-wolf img {
+/* ==================== WOLF IMAGES ==================== */
+
+.wolf-avatar,
+.lead-wolf img,
+.featured-wolf img {
     border-radius: 50% !important;
-    border: 3px solid #e8f6fb !important;
-    box-shadow: 0 0 18px #e8f6fb !important;
+    border: 3px solid rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.8) !important;
 }
 
-/* ===== TABLES ===== */
-.table {
-    background: rgba(200, 225, 235, 0.35) !important;
-}
+/* ==================== TABLES ==================== */
 
 .table th {
-    background: rgba(215, 235, 245, 0.55) !important;
-    color: #ffffff !important;
+    background: rgba(255, 235, 220, 0.7) !important;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background: rgba(225, 240, 245, 0.35) !important;
+    background: rgba(245, 230, 215, 0.55) !important;
 }
 
-/* ===== STAT BARS ===== */
+/* ==================== STAT BARS ==================== */
+
 .progress {
-    background: rgba(180, 205, 215, 0.4) !important;
+    background: rgba(230, 215, 200, 0.6) !important;
 }
 
-.bg-danger { /* Hunger */
-    background: #a9d3dc !important;
+.bg-danger,
+.bg-warning,
+.bg-info,
+.bg-success {
+    background: rgba(255, 240, 225, 0.9) !important;
 }
 
-.bg-warning { /* Energy */
-    background: #cdeaf2 !important;
-}
+/* ==================== ALERTS ==================== */
 
-.bg-info { /* HP */
-    background: #b8dde6 !important;
-}
-
-.bg-success { /* EXP */
-    background: #e4f6fb !important;
-}
-
-/* ===== ICONS (ICY TINT) ===== */
-img.icon, img[src*="icon"], .small-icon {
-    filter: brightness(0) saturate(100%) invert(92%) sepia(10%) saturate(300%) hue-rotate(170deg) brightness(105%) contrast(90%) !important;
-}
-
-/* ===== ALERTS ===== */
 .alert {
-    background: rgba(210, 235, 245, 0.45) !important;
+    background: rgba(255, 235, 220, 0.75) !important;
     border: none !important;
-    color: #ffffff !important;
 }
 
-/* ===== SOFT WHITE HOVER GLOW (GLOBAL, WOLVDEN-SAFE) ===== */
+/* ==================== ICONS ==================== */
 
-/* Smooth transition for hover effects */
-* {
-    transition: box-shadow 0.25s ease, filter 0.25s ease, background-color 0.25s ease;
+img.icon,
+img[src*="icon"],
+.small-icon {
+    filter: grayscale(100%) brightness(0.4) !important;
 }
 
-/* Apply glow on hover to interactive elements */
+/* ==================== HOVER GLOW ==================== */
+
 a:hover,
 button:hover,
 .card:hover,
@@ -132,11 +150,9 @@ button:hover,
 img:hover,
 .progress:hover,
 .alert:hover {
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.45) !important;
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.65) !important;
 }
 
-/* Extra soft glow for images (wolves, icons) */
 img:hover {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
 }
-
