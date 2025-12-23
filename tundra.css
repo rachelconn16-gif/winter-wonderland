@@ -1,58 +1,62 @@
-/* WOLVDEN PROFILE CSS — SUNSET TUNDRA (COHESIVE) */
-/* Paste EVERYTHING below into: Den → Settings → Profile CSS */
-
-/* ==================== GOOGLE FONT ==================== */
+/* ===============================
+   GOOGLE FONT (MEDIEVAL STYLE)
+   =============================== */
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
-/* ==================== GLOBAL ==================== */
-
-body {
-    background: url('https://p4.wallpaperbetter.com/wallpaper/368/992/890/earth-sunset-alaska-cloud-wallpaper-preview.jpg') no-repeat center center fixed !important;
-    background-size: cover !important;
-    color: #000000 !important;
-    font-family: 'MedievalSharp', serif !important;
-}
-
-body, h1, h2, h3, h4, h5, p, span, div, a, td, th, li {
-    color: #000000 !important;
-    font-family: 'MedievalSharp', serif !important;
-}
-
+/* ===============================
+   GLOBAL
+   =============================== */
 * {
-    transition: box-shadow 0.25s ease, filter 0.25s ease, background-color 0.25s ease;
+    font-family: 'MedievalSharp', serif !important;
+    transition: box-shadow 0.25s ease, background-color 0.25s ease, filter 0.25s ease;
 }
 
-/* ==================== WOLVDEN LOGO (ALWAYS ABOVE CSS) ==================== */
+/* ===============================
+   BACKGROUND
+   =============================== */
+body {
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/368/992/890/earth-sunset-alaska-cloud-wallpaper-preview.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    color: #000000 !important;
+}
 
-#header .navbar-brand img {
+/* ===============================
+   HEADER + LOGO (DESKTOP SAFE)
+   =============================== */
+#header,
+#header * {
+    overflow: visible !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+#header img,
+#header .logo,
+#header .navbar-brand {
     position: relative !important;
     z-index: 9999 !important;
-    filter: none !important;
 }
 
-/* ==================== TOP BAR ==================== */
-
+/* ===============================
+   TOP NAV BAR
+   =============================== */
 #header .navbar-main,
 .navbar-status {
-    background: rgba(245, 225, 210, 0.55) !important;
-    border-bottom: 1px solid rgba(200, 180, 165, 0.8) !important;
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.45) !important;
-    backdrop-filter: blur(4px);
+    background: rgba(215, 230, 235, 0.45) !important;
+    border-bottom: 1px solid rgba(180, 200, 210, 0.8) !important;
 }
 
-#header a,
-.navbar-status a {
-    color: #000000 !important;
-}
-
-/* ==================== SIDEBAR ==================== */
-
+/* ===============================
+   SIDEBAR (TRANSPARENT ICE)
+   =============================== */
 #sidebar,
 #sidebar .card {
-    background: rgba(245, 235, 225, 0.45) !important;
-    border: 1px solid rgba(200, 185, 170, 0.7) !important;
-    border-radius: 16px !important;
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.5) !important;
+    background: rgba(220, 235, 240, 0.28) !important;
+    border: 1px solid rgba(180, 200, 210, 0.7) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 0 14px rgba(255,255,255,0.4) !important;
 }
 
 #sidebar h3,
@@ -61,112 +65,81 @@ body, h1, h2, h3, h4, h5, p, span, div, a, td, th, li {
     color: #000000 !important;
 }
 
-/* ==================== MAIN PANELS ==================== */
-
+/* ===============================
+   MAIN PANELS
+   =============================== */
 #main,
-.box,
-.container,
-.content,
 .card,
-.table {
-    background: rgba(250, 240, 230, 0.55) !important;
-    border: 1px solid rgba(210, 195, 180, 0.8) !important;
+.table,
+.alert {
+    background: rgba(220, 235, 240, 0.35) !important;
+    border: 1px solid rgba(180, 200, 210, 0.7) !important;
     border-radius: 18px !important;
-    box-shadow: 0 0 16px rgba(255, 255, 255, 0.45) !important;
+    box-shadow: 0 0 14px rgba(255,255,255,0.4) !important;
 }
 
-/* ==================== HEADERS ==================== */
-
-#main h1,
-#main h2.page-title {
-    background: rgba(255, 235, 220, 0.65) !important;
-    padding: 12px 20px !important;
-    border-radius: 14px !important;
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.6) !important;
-    text-align: center;
-}
-
-/* ==================== NAV TABS ==================== */
-
-.nav-tabs {
-    border: none !important;
-}
-
+/* ===============================
+   NAV TABS
+   =============================== */
 .nav-tabs .nav-link {
-    background: rgba(240, 225, 210, 0.55) !important;
-    border: 1px solid rgba(200, 185, 170, 0.7) !important;
-    border-radius: 0 0 36px 36px !important;
+    background: rgba(215, 230, 235, 0.3) !important;
+    color: #000000 !important;
+    border: 1px solid rgba(180, 200, 210, 0.6) !important;
+    border-radius: 0 0 30px 30px !important;
 }
 
 .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link.active {
-    background: rgba(255, 240, 225, 0.75) !important;
+    background: rgba(235, 245, 250, 0.55) !important;
 }
 
-/* ==================== WOLF IMAGES (MATCH SIDEBAR TRANSPARENCY) ==================== */
-
-.wolf-avatar,
+/* ===============================
+   WOLF IMAGES (MATCH SIDEBAR)
+   =============================== */
+.featured-wolf img,
 .lead-wolf img,
-.featured-wolf img {
+img[src*="wolf"] {
     border-radius: 50% !important;
-    background: rgba(245, 235, 225, 0.45) !important;
-    border: 1px solid rgba(200, 185, 170, 0.7) !important;
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.5) !important;
+    border: 3px solid rgba(180, 200, 210, 0.8) !important;
+    box-shadow: 0 0 14px rgba(255,255,255,0.45) !important;
+    filter: none !important;
 }
 
-/* ==================== TABLES ==================== */
-
-.table th {
-    background: rgba(255, 235, 220, 0.7) !important;
+/* ===============================
+   REMOVE GREYSCALE FROM LISTINGS
+   =============================== */
+img {
+    filter: none !important;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background: rgba(245, 230, 215, 0.55) !important;
+/* ===============================
+   ICONS (COOL TUNDRA GREEN)
+   =============================== */
+.icon,
+img[src*="icon"] {
+    filter: sepia(25%) saturate(120%) hue-rotate(160deg) brightness(95%) !important;
 }
 
-/* ==================== STAT BARS ==================== */
-
+/* ===============================
+   STAT BARS
+   =============================== */
 .progress {
-    background: rgba(230, 215, 200, 0.6) !important;
+    background: rgba(190, 210, 220, 0.5) !important;
 }
 
-.bg-danger,
-.bg-warning,
-.bg-info,
-.bg-success {
-    background: rgba(255, 240, 225, 0.9) !important;
-}
+.bg-danger { background: #b6d7de !important; }   /* Hunger */
+.bg-warning { background: #d6edf2 !important; }  /* Energy */
+.bg-info    { background: #c1e0e8 !important; }  /* HP */
+.bg-success { background: #e6f6fa !important; }  /* EXP */
 
-/* ==================== ALERTS ==================== */
-
-.alert {
-    background: rgba(255, 235, 220, 0.75) !important;
-    border: none !important;
-}
-
-/* ==================== ICONS ==================== */
-
-img.icon,
-img[src*="icon"],
-.small-icon {
-    filter: grayscale(100%) brightness(0.4) !important;
-}
-
-/* ==================== SOFT WHITE HOVER GLOW ==================== */
-
+/* ===============================
+   SOFT WHITE HOVER GLOW
+   =============================== */
 a:hover,
-button:hover,
 .card:hover,
-.box:hover,
 .table:hover,
-.nav-link:hover,
-#sidebar .card:hover,
 img:hover,
-.progress:hover,
+.nav-link:hover,
 .alert:hover {
-    box-shadow: 0 0 14px rgba(255, 255, 255, 0.65) !important;
-}
-
-img:hover {
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+    box-shadow: 0 0 12px rgba(255,255,255,0.55) !important;
 }
