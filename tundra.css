@@ -1,5 +1,8 @@
-/* WOLVDEN PROFILE CSS — SUNSET TUNDRA THEME */
+/* WOLVDEN PROFILE CSS — SUNSET TUNDRA (COHESIVE) */
 /* Paste EVERYTHING below into: Den → Settings → Profile CSS */
+
+/* ==================== GOOGLE FONT ==================== */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 /* ==================== GLOBAL ==================== */
 
@@ -7,14 +10,24 @@ body {
     background: url('https://p4.wallpaperbetter.com/wallpaper/368/992/890/earth-sunset-alaska-cloud-wallpaper-preview.jpg') no-repeat center center fixed !important;
     background-size: cover !important;
     color: #000000 !important;
+    font-family: 'MedievalSharp', serif !important;
 }
 
 body, h1, h2, h3, h4, h5, p, span, div, a, td, th, li {
     color: #000000 !important;
+    font-family: 'MedievalSharp', serif !important;
 }
 
 * {
     transition: box-shadow 0.25s ease, filter 0.25s ease, background-color 0.25s ease;
+}
+
+/* ==================== WOLVDEN LOGO (ALWAYS ABOVE CSS) ==================== */
+
+#header .navbar-brand img {
+    position: relative !important;
+    z-index: 9999 !important;
+    filter: none !important;
 }
 
 /* ==================== TOP BAR ==================== */
@@ -90,14 +103,15 @@ body, h1, h2, h3, h4, h5, p, span, div, a, td, th, li {
     background: rgba(255, 240, 225, 0.75) !important;
 }
 
-/* ==================== WOLF IMAGES ==================== */
+/* ==================== WOLF IMAGES (MATCH SIDEBAR TRANSPARENCY) ==================== */
 
 .wolf-avatar,
 .lead-wolf img,
 .featured-wolf img {
     border-radius: 50% !important;
-    border: 3px solid rgba(255, 255, 255, 0.9) !important;
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.8) !important;
+    background: rgba(245, 235, 225, 0.45) !important;
+    border: 1px solid rgba(200, 185, 170, 0.7) !important;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.5) !important;
 }
 
 /* ==================== TABLES ==================== */
@@ -138,7 +152,7 @@ img[src*="icon"],
     filter: grayscale(100%) brightness(0.4) !important;
 }
 
-/* ==================== HOVER GLOW ==================== */
+/* ==================== SOFT WHITE HOVER GLOW ==================== */
 
 a:hover,
 button:hover,
